@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ThongTinUngDungActivity">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbarTTUD"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tTenUD"
+        android:text="+ Tên ứng dụng: ứng dụng nghe nhạc ListenMusic"
+        android:layout_below="@id/toolbarTTUD"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tPhienBan"
+        android:text="+ Phiên bản: 1.0.0"
+        android:layout_below="@id/tTenUD"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tBy"
+        android:text="+ Sáng tác bởi: phamminhkc2080@gmail.com"
+        android:layout_below="@id/tPhienBan"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+
+        />
+</RelativeLayout>

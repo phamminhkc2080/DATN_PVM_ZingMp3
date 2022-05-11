@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/myTabLayoutYeuthich"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="150dp"
+        android:background="@null"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorColor="#FFC107"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#FFC107"
+        app:tabTextAppearance="@style/Stype_TabLayout"
+        app:tabTextColor="#6C6666" />
+
+        <RelativeLayout
+        android:layout_width="313dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Activity.DanhsachyeuthichActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDanhsachyeuthich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpagerDanhsachyethich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/reMini"
+            android:layout_below="@id/toolbarDanhsachyeuthich"
+            >
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <RelativeLayout
+            android:id="@+id/reMini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/fragmentMini"
+                android:name="com.example.listtenmusic.Fragment.FragmentMiniPlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

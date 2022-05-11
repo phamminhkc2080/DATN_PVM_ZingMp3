@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/cdburning"
+        android:id="@+id/imbaihathot"
+        android:layout_margin="3dp"
+        android:scaleType="fitXY"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    <TextView
+        android:paddingLeft="5dp"
+        android:layout_toLeftOf="@id/imLuotthich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tTenBaihathot"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/imbaihathot"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:maxWidth="200dp"
+        android:textColor="#363636"
+        android:textSize="18sp"
+        android:text="Tên bài hát"/>
+    <TextView
+        android:paddingLeft="5dp"
+        android:layout_toLeftOf="@id/imLuotthich"
+        android:maxWidth="200dp"
+        android:textColor="#8c8a8a"
+        android:text="Ca si"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:layout_toRightOf="@id/imbaihathot"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/tTenBaihathot"
+        android:id="@+id/tTenCaSibaihathot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon_love_false"
+        android:id="@+id/imLuotthich"
+        
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+</RelativeLayout>

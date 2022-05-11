@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="#FFC107"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/bMenu"
+            android:layout_width="102.5dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/menu" />
+
+        <Button
+            android:onClick="AddFragment"
+            android:id="@+id/bOffline"
+            android:layout_width="102.5dp"
+            android:layout_height="60dp"
+            android:layout_weight="0"
+            android:background="@null"
+            android:text="Offline"
+            android:textColor="#F7FBFBF3" />
+
+        <Button
+            android:onClick="AddFragment"
+            android:id="@+id/bOnline"
+            android:layout_width="102.5dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="Online"
+            android:textColor="#F7FBFBF3" />
+
+        <ImageButton
+            android:id="@+id/bTimkiem"
+            android:layout_width="102.5dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/timkiem" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragContent"
+        android:layout_width="match_parent"
+        android:layout_height="667dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

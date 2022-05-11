@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imAnhNgheNhac"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/anhnghenhac"></ImageView>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/imAnhNgheNhac"
+        android:background="@null"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hengio" />
+
+    <Button
+        android:id="@+id/bHengio"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/imAnhNgheNhac"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        android:paddingLeft="-80dp"
+        android:text="Hẹn giờ"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/bHengio"
+        android:background="@null"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/yeuthich" />
+
+    <Button
+        android:id="@+id/bYeuThich"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/bHengio"
+        android:background="@null"
+        android:paddingLeft="-5dp"
+        android:text="Danh sách yêu thích"
+        android:textAllCaps="false" />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/bYeuThich"
+        android:background="@null"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/thongtin" />
+
+    <Button
+        android:id="@+id/bThongtin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/bYeuThich"
+        android:background="@null"
+        android:paddingLeft="-5dp"
+        android:text="Thông tin ứng dụng"
+        android:textAllCaps="false" />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/bThongtin"
+        android:background="@null"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/huongdan" />
+
+    <Button
+        android:id="@+id/bHuongdan"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/bThongtin"
+        android:background="@null"
+        android:paddingLeft="-5dp"
+        android:text="Hướng dẫn sử dụng"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

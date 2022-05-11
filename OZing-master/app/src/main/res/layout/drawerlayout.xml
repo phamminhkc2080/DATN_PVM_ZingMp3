@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/reA2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/reA1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#FFC107"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageButton
+                    android:id="@+id/bMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/menu" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayoutmain"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    app:tabIndicatorColor="#FFC107"
+                    app:tabMode="fixed"
+                    app:tabTextColor="#ffffff" />
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_above="@id/reMini"
+                android:id="@+id/viewpagerLayoutmain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linearLayout"
+                android:layout_marginTop="-2dp"
+                />
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/reMini"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <fragment
+                    android:id="@+id/fragmentMini"
+                    android:name="com.example.listtenmusic.Fragment.FragmentMiniPlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/imAnhNgheNhac"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/anhnghenhac"></ImageView>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/imAnhNgheNhac"
+            android:background="@null"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hengio" />
+
+        <Button
+            android:id="@+id/bHengio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/imAnhNgheNhac"
+            android:layout_marginTop="4dp"
+            android:background="@null"
+            android:paddingLeft="-80dp"
+            android:text="Hẹn giờ"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/bHengio"
+            android:background="@null"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/yeuthich" />
+
+        <Button
+            android:id="@+id/bDanhsachYeuThich"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/bHengio"
+            android:background="@null"
+            android:paddingLeft="-5dp"
+            android:text="Danh sách yêu thích"
+            android:textAllCaps="false" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/bDanhsachYeuThich"
+            android:background="@null"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/thongtin" />
+
+        <Button
+            android:id="@+id/bThongtin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/bDanhsachYeuThich"
+            android:background="@null"
+            android:paddingLeft="-5dp"
+            android:text="Thông tin ứng dụng"
+            android:textAllCaps="false" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/bThongtin"
+            android:background="@null"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/huongdan" />
+
+        <Button
+            android:id="@+id/bHuongdan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/bThongtin"
+            android:background="@null"
+            android:paddingLeft="-5dp"
+            android:text="Hướng dẫn sử dụng"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

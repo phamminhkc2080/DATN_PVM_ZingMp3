@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:src="@mipmap/ic_launcher"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:id="@+id/imsearchbaihat"
+    android:layout_margin="3dp"
+    android:scaleType="fitXY"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxWidth="250dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/imsearchbaihat"
+        android:text="Ten bai hat"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:id="@+id/tSearchTenbaihat"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxWidth="250dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/imsearchbaihat"
+        android:text="Ten ca si"
+        android:textColor="#716E6E"
+        android:textSize="18sp"
+        android:layout_below="@id/tSearchTenbaihat"
+        android:id="@+id/tSearchTencasi"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imSearchLuotthich"
+        android:src="@drawable/icon_love_false"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#E8DDDD"
+        android:visibility="visible"
+        android:id="@+id/miniplayLayout">
+
+        <ProgressBar
+
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/imChay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cdburning"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+        />
+
+        <ImageButton
+            android:id="@+id/bEnd"
+            android:layout_width="40dp"
+            android:layout_height="62dp"
+            android:layout_marginEnd="15dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:srcCompat="@drawable/end1" />
+
+        <ImageButton
+            android:id="@+id/bPlayMini"
+            android:layout_width="40dp"
+            android:layout_height="62dp"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/bEnd"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:srcCompat="@drawable/pause1" />
+
+        <ImageButton
+            android:id="@+id/bStart"
+            android:layout_width="40dp"
+            android:layout_height="62dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toStartOf="@+id/bPlayMini"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:srcCompat="@drawable/skip_to_start1" />
+
+        <TextView
+            android:id="@+id/textViewMini"
+            android:layout_width="190dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxWidth="190dp"
+            android:maxLines="2"
+            android:text="ListtenMusic"
+            app:layout_constraintStart_toEndOf="@+id/imChay"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/playnhacLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_background_playnhac"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarplaynhac"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpagerPlaynhac"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tTimeSong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:text="00:00"
+                    android:textColor="#FFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <SeekBar
+                    android:id="@+id/seebarSong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9" />
+
+                <TextView
+                    android:id="@+id/tTongThoiGian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:text="00:00"
+                    android:textColor="#FFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imshuffle"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shuffle_playnhac" />
+
+                <ImageButton
+                    android:id="@+id/imSkiptostart"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/skiptostart_playnhac" />
+
+                <ImageButton
+                    android:id="@+id/implay"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/play_playnhac" />
+
+                <ImageButton
+                    android:id="@+id/imNext"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/next_playnhac" />
+
+                <ImageButton
+                    android:id="@+id/imRepeat"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/repeat_playnhac" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

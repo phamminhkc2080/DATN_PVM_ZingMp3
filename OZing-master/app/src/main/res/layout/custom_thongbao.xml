@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFEB3B">
+<TextView
+    android:layout_marginLeft="10dp"
+    android:ellipsize="end"
+    android:singleLine="true"
+    android:maxLines="1"
+    android:layout_marginTop="10dp"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="Ten bai hat"
+    android:textSize="18dp"
+    android:textColor="#000000"
+    android:id="@+id/tTenBaiHatThongBao"
+    />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tTenBaiHatThongBao"
+        android:layout_marginTop="5dp"
+        android:text="Ten ca si"
+        android:textSize="15dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/tTenCasiThongBao"
+        />
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tTenCasiThongBao"
+        android:src="@drawable/ic_pre_black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/im_pre_tb"
+        />
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/im_pre_tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tTenCasiThongBao"
+        android:src="@drawable/ic_pause_black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/im_play_tb"
+        />
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tTenCasiThongBao"
+        android:src="@drawable/ic_next_black"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/im_play_tb"
+        android:id="@+id/im_next_tb"
+        />
+    <ImageView
+        android:id="@+id/im_close_tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tTenCasiThongBao"
+        android:src="@drawable/ic_close_black"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/im_next_tb"
+        />
+    <ImageView
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tTenBaiHatThongBao"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        />
+
+</RelativeLayout>

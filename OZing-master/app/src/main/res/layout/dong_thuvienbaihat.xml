@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/imthuvien"
+    android:layout_margin="5dp"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/singer"
+    />
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/tTenbaihatThuvien"
+        android:layout_marginRight="10dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_toRightOf="@id/imthuvien"
+        android:textSize="20sp"
+        android:text="ten bai hat"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <TextView
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:text="ca si"
+        android:textColor="#8E8E88"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tTenbaihatThuvien"
+        android:layout_toRightOf="@id/imthuvien"
+        android:id="@+id/tTenCasiThuvien"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HuongDanSuDungActivity">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbarHDSD"/>
+    <TextView
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_below="@id/toolbarHDSD"
+        android:textColor="#4A4141"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chỉ việc tìm và chọn bài hát bạn yêu thích và thưởng thức nó thôi"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/textView8"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+
+        android:background="@drawable/gif_music" />
+</RelativeLayout>

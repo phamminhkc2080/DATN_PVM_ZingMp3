@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DanhSachCacPlayListActivity">
+<androidx.appcompat.widget.Toolbar
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:id="@+id/toolbardanhsachcacplaylist"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+</androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@id/reMini"
+        android:id="@+id/recylerviewdanhcacplaylist"
+        android:layout_below="@+id/toolbardanhsachcacplaylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/reMini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <fragment
+            android:id="@+id/fragmentMini"
+            android:name="com.example.listtenmusic.Fragment.FragmentMiniPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+</RelativeLayout>

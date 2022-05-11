@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFC107">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSearchBaihat"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+        <TextView
+            android:id="@+id/bh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appbarlayoutSearch"
+            android:text="Bài hát"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerviewSearchBaihat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bh"
+            android:layout_marginTop="5dp"></androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/vd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recylerviewSearchBaihat"
+            android:layout_marginTop="5dp"
+            android:text="MV"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/recylerviewSearchBaihatVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vd"
+            android:layout_marginTop="5dp"></ListView>
+
+        <TextView
+            android:id="@+id/tKhongcodulieu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Không có dữ liệu bài hát"
+            android:textColor="#FF9800"
+            android:textSize="35sp"
+            android:visibility="gone" />
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/imVideo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/gif_music"
+        />
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên bài hát"
+        android:layout_below="@id/imVideo"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/tTenBaiHatVideo"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+
+        />
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên ca sĩ bài hát"
+        android:layout_below="@id/tTenBaiHatVideo"
+        android:textSize="15sp"
+        android:textColor="#6E6969"
+        android:id="@+id/tTenCaSiVideo"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+    <ImageView
+        android:src="@drawable/icon_love_false"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imyeuthichvideo"
+        android:layout_below="@id/imVideo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp"/>
+</RelativeLayout>

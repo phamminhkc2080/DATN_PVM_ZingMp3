@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.listtenmusic">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Adapter.WifiApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Activity.DanhsachyeuthichActivity"></activity>
+        <activity
+            android:name=".Activity.PlayVideoActivity"
+            android:configChanges="orientation|screenSize|layoutDirection" />
+        <activity android:name=".Activity.ThongTinUngDungActivity" />
+        <activity android:name=".Activity.HuongDanSuDungActivity" />
+        <activity android:name=".Activity.ThuVienNhacActivity" />
+        <activity android:name=".Activity.PlayNhacActivity"
+            />
+        <activity android:name=".Activity.DanhSachTatcaAlbumActivity" />
+        <activity android:name=".Activity.DanhsachtheloaitheochudeActivity" />
+        <activity android:name=".Activity.DanhsachtatcachudeActivity" />
+        <activity android:name=".Activity.DanhSachCacPlayListActivity" />
+        <activity android:name=".Activity.DanhsachBaihatActivity" />
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Layout_main" />
+
+        <receiver
+            android:name=".Adapter.ConnectionReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Service.NotificationActionService"
+            android:enabled="true"
+            android:exported="true">
+
+        </receiver>
+
+        <service
+            android:name=".Service.PlayNhacService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Service.HenGioService"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver android:name=".NotificationReceiver"/>
+    </application>
+
+</manifest>
